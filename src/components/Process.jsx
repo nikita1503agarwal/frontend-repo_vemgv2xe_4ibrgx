@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { Phone, ClipboardCheck, Broom, Smile } from 'lucide-react'
+import { Phone, ClipboardCheck, Sparkles, Smile } from 'lucide-react'
 
 const steps = [
   { icon: Phone, title: '1. Request', desc: 'Tell us about your space, timing, and preferences.' },
   { icon: ClipboardCheck, title: '2. Plan', desc: 'We confirm scope, assign experts, and schedule.' },
-  { icon: Broom, title: '3. Clean', desc: 'Our team arrives fully equipped and on time.' },
+  { icon: Sparkles, title: '3. Clean', desc: 'Our team arrives fully equipped and on time.' },
   { icon: Smile, title: '4. Delight', desc: 'Walkthrough and touch-ups to ensure perfection.' },
 ]
 
