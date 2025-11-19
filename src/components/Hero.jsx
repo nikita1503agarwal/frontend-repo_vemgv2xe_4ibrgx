@@ -3,15 +3,17 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] w-full overflow-hidden" id="home">
-      <div className="absolute inset-0">
+    <section className="relative min-h-[90vh] w-full overflow-hidden bg-slate-950" id="home">
+      {/* Spline background */}
+      <div className="absolute inset-0 z-0">
         <Spline scene="https://prod.spline.design/zhZFnwyOYLgqlLWk/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
-      {/* gradient overlay to improve contrast */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/30 to-slate-950/80" />
+      {/* gradient overlay to improve contrast (above Spline) */}
+      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950/90" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-[8rem] pb-24">
+      {/* Content */}
+      <div className="relative z-20 mx-auto max-w-7xl px-6 pt-[8rem] pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
